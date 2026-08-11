@@ -55,8 +55,30 @@ export default function Home() {
     <main className={open ? "site is-open" : "site"}>
       <section className={opening ? "cover is-tossing" : "cover"} aria-hidden={open}>
         <button className="canva-cover" onClick={handleOpen} disabled={opening} aria-label="Abrir o convite">
-          <span className="cover-cap-emblem" aria-hidden="true">
-            <img src="/capelo-lavanda.png" alt="" />
+          <span className="folder-scene" aria-hidden="true">
+            <span className="folder-sheet sheet-date">
+              <small>AGOSTO</small>
+              <strong>19</strong>
+              <em>2026</em>
+            </span>
+            <span className="folder-sheet sheet-cap">
+              <img src="/capelo-lavanda.png" alt="" />
+              <small>GRADUATION DAY</small>
+            </span>
+            <span className="folder-ticket">UCB · TAGUATINGA</span>
+            <span className="folder-paperclip" />
+            <span className="folder-main">
+              <span className="folder-tab">ARQUIVO PESSOAL</span>
+              <span className="folder-kicker">DEPOIS DE TANTOS CÓDIGOS</span>
+              <span className="folder-title">Bruna</span>
+              <span className="folder-script">minha colação</span>
+              <span className="folder-meta">
+                <span>CLASS OF ’26</span>
+                <span>19 · 08 · 2026</span>
+              </span>
+              <span className="folder-stamp">GRANDE DIA</span>
+              <span className="folder-stars">✦　✧　✦</span>
+            </span>
           </span>
           <span className="sr-only">Abrir o convite</span>
         </button>

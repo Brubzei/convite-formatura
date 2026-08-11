@@ -327,3 +327,242 @@
   }
   .cover-cap-emblem{width:clamp(145px,48vw,205px)}
 }
+
+/* Capa scrapbook: arquivo de formatura em camadas */
+.canva-cover{
+  display:block;
+  overflow:hidden;
+  color:#3f2850;
+  background:
+    radial-gradient(circle at 14% 18%,rgba(255,255,255,.78),transparent 23%),
+    radial-gradient(circle at 84% 78%,rgba(147,103,176,.2),transparent 28%),
+    repeating-linear-gradient(0deg,rgba(75,49,91,.035) 0,rgba(75,49,91,.035) 1px,transparent 1px,transparent 4px),
+    linear-gradient(135deg,#eee5f4 0,#d8c7e5 48%,#c4add5 100%);
+  perspective:1100px;
+}
+.folder-scene{
+  position:absolute;
+  z-index:3;
+  top:50%;
+  left:50%;
+  display:block;
+  width:min(92vw,980px);
+  height:min(78vh,640px);
+  min-height:500px;
+  transform:translate(-50%,-50%);
+  filter:drop-shadow(0 28px 34px rgba(55,33,67,.2));
+  animation:folderArrive .9s cubic-bezier(.2,.8,.2,1) both;
+}
+.folder-sheet{
+  position:absolute;
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+  border:1px solid rgba(89,56,108,.24);
+  box-shadow:0 14px 25px rgba(57,34,70,.16);
+}
+.sheet-date{
+  top:3%;
+  left:8%;
+  width:30%;
+  height:43%;
+  align-items:flex-start;
+  justify-content:flex-end;
+  padding:clamp(20px,3vw,42px);
+  transform:rotate(-5deg);
+  background:
+    repeating-linear-gradient(0deg,transparent 0,transparent 22px,rgba(117,81,139,.12) 22px,rgba(117,81,139,.12) 23px),
+    #f8f4f8;
+}
+.sheet-date small,.sheet-date em{
+  font-size:clamp(7px,.85vw,10px);
+  font-style:normal;
+  font-weight:600;
+  letter-spacing:.28em;
+}
+.sheet-date strong{
+  margin:3px 0 -5px;
+  color:#65427a;
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(72px,10vw,132px);
+  font-weight:400;
+  line-height:.78;
+}
+.sheet-cap{
+  top:2%;
+  right:8%;
+  width:31%;
+  height:42%;
+  padding:10px 10px 28px;
+  transform:rotate(4.5deg);
+  background:#2b1934;
+}
+.sheet-cap img{width:100%;height:100%;object-fit:cover;object-position:center}
+.sheet-cap small{
+  position:absolute;
+  right:14px;
+  bottom:9px;
+  color:#d7c1e5;
+  font-size:clamp(6px,.72vw,9px);
+  letter-spacing:.22em;
+}
+.folder-ticket{
+  position:absolute;
+  z-index:2;
+  top:24%;
+  right:30%;
+  padding:10px 22px;
+  border:1px dashed #7b568f;
+  background:#eadcf1;
+  color:#614274;
+  font-size:clamp(7px,.75vw,9px);
+  font-weight:700;
+  letter-spacing:.2em;
+  transform:rotate(-3deg);
+  box-shadow:0 8px 16px rgba(63,38,77,.13);
+}
+.folder-main{
+  position:absolute;
+  z-index:3;
+  right:3%;
+  bottom:1%;
+  left:3%;
+  height:68%;
+  overflow:visible;
+  border:1px solid rgba(255,255,255,.35);
+  border-radius:28px 28px 18px 18px;
+  background:
+    radial-gradient(circle at 82% 22%,rgba(255,255,255,.16),transparent 22%),
+    repeating-linear-gradient(0deg,rgba(72,41,89,.035) 0,rgba(72,41,89,.035) 1px,transparent 1px,transparent 4px),
+    linear-gradient(145deg,#bd83dc 0,#a66ec7 48%,#81539f 100%);
+  box-shadow:inset 0 1px rgba(255,255,255,.42),0 22px 35px rgba(55,31,68,.24);
+}
+.folder-main::after{
+  content:"";
+  position:absolute;
+  right:4%;
+  bottom:8%;
+  left:4%;
+  height:1px;
+  background:rgba(248,239,251,.34);
+}
+.folder-tab{
+  position:absolute;
+  top:-54px;
+  left:17%;
+  display:grid;
+  place-items:center;
+  width:230px;
+  height:56px;
+  border:1px solid rgba(255,255,255,.3);
+  border-bottom:0;
+  border-radius:24px 24px 0 0;
+  background:#b77bd6;
+  color:#fff;
+  font-size:9px;
+  font-weight:700;
+  letter-spacing:.24em;
+}
+.folder-kicker{
+  position:absolute;
+  top:14%;
+  left:8%;
+  color:#f5eaf9;
+  font-size:clamp(7px,.9vw,10px);
+  font-weight:700;
+  letter-spacing:.28em;
+}
+.folder-title{
+  position:absolute;
+  top:19%;
+  left:8%;
+  color:#fffafc;
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(80px,12vw,148px);
+  font-weight:500;
+  line-height:.82;
+  letter-spacing:-.055em;
+  text-shadow:0 7px 20px rgba(83,46,102,.2);
+}
+.folder-script{
+  position:absolute;
+  top:50%;
+  left:25%;
+  color:#f5eafb;
+  font-family:'Great Vibes',cursive;
+  font-size:clamp(42px,7vw,84px);
+  line-height:1;
+  transform:rotate(-4deg);
+}
+.folder-meta{
+  position:absolute;
+  right:7%;
+  bottom:13%;
+  left:8%;
+  display:flex;
+  justify-content:space-between;
+  color:#f3e6f8;
+  font-size:clamp(7px,.8vw,9px);
+  font-weight:700;
+  letter-spacing:.22em;
+}
+.folder-stamp{
+  position:absolute;
+  top:18%;
+  right:7%;
+  padding:9px 14px 7px;
+  border:2px solid rgba(244,229,250,.76);
+  color:#f5eafa;
+  font-size:clamp(7px,.8vw,10px);
+  font-weight:800;
+  letter-spacing:.16em;
+  transform:rotate(8deg);
+  opacity:.9;
+}
+.folder-stars{
+  position:absolute;
+  right:9%;
+  top:49%;
+  color:#f7ebfb;
+  font-size:clamp(13px,2vw,24px);
+  letter-spacing:.2em;
+}
+.folder-paperclip{
+  position:absolute;
+  z-index:5;
+  top:31%;
+  left:1.6%;
+  width:54px;
+  height:17px;
+  border:3px solid #e7d7ec;
+  border-radius:999px;
+  transform:rotate(-5deg);
+  box-shadow:0 3px 8px rgba(55,33,67,.16);
+}
+.cover-sparkles{z-index:5}
+.canva-cover:hover .folder-scene,.canva-cover:focus-visible .folder-scene{
+  filter:drop-shadow(0 34px 40px rgba(55,33,67,.28));
+}
+@keyframes folderArrive{
+  from{opacity:0;transform:translate(-50%,-45%) scale(.94) rotateX(3deg)}
+  to{opacity:1;transform:translate(-50%,-50%) scale(1) rotateX(0)}
+}
+@media(max-width:700px){
+  .folder-scene{width:94vw;height:min(76svh,620px);min-height:510px}
+  .sheet-date{top:3%;left:3%;width:43%;height:38%;padding:22px}
+  .sheet-date strong{font-size:82px}
+  .sheet-cap{top:1%;right:3%;width:48%;height:35%;padding:7px 7px 23px}
+  .folder-ticket{top:27%;right:24%;padding:7px 11px;font-size:6px}
+  .folder-main{right:1%;bottom:3%;left:1%;height:64%;border-radius:20px 20px 14px 14px}
+  .folder-tab{top:-39px;left:13%;width:168px;height:41px;border-radius:17px 17px 0 0;font-size:7px}
+  .folder-kicker{top:12%;left:7%;font-size:6px;letter-spacing:.2em}
+  .folder-title{top:20%;left:7%;font-size:clamp(72px,22vw,96px)}
+  .folder-script{top:48%;left:17%;font-size:clamp(43px,14vw,62px)}
+  .folder-stamp{top:17%;right:5%;padding:6px 8px;font-size:6px}
+  .folder-stars{top:60%;right:5%;font-size:14px}
+  .folder-meta{right:6%;bottom:12%;left:7%;font-size:6px;letter-spacing:.12em}
+  .folder-paperclip{top:34%;left:-1%;width:42px;height:14px;border-width:2px}
+}
+@media(max-height:700px){
+  .folder-scene{height:86vh;min-height:0}
+}
