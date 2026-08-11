@@ -54,8 +54,11 @@ export default function Home() {
   return (
     <main className={open ? "site is-open" : "site"}>
       <section className={opening ? "cover is-tossing" : "cover"} aria-hidden={open}>
-        <button className="canva-cover" onClick={handleOpen} disabled={opening} aria-label="Clique aqui para abrir o convite">
-          <span className="sr-only">Clique aqui para abrir o convite</span>
+        <button className="canva-cover" onClick={handleOpen} disabled={opening} aria-label="Abrir o convite">
+          <span className="cover-cap-emblem" aria-hidden="true">
+            <img src="/capelo-lavanda.png" alt="" />
+          </span>
+          <span className="sr-only">Abrir o convite</span>
         </button>
         <div className="cover-sparkles" aria-hidden="true">
           {Array.from({ length: 12 }, (_, index) => <span key={index}>✦</span>)}
