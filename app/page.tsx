@@ -47,7 +47,7 @@ export default function Home() {
       return;
     }
     setOpening(true);
-    window.setTimeout(() => setOpen(true), 720);
+    window.setTimeout(() => setOpen(true), 860);
     window.setTimeout(() => setOpening(false), 2600);
   }
 
@@ -56,28 +56,44 @@ export default function Home() {
       <section className={opening ? "cover is-tossing" : "cover"} aria-hidden={open}>
         <button className="canva-cover" onClick={handleOpen} disabled={opening} aria-label="Abrir o convite">
           <span className="folder-scene" aria-hidden="true">
-            <span className="folder-sheet sheet-date">
-              <small>AGOSTO</small>
-              <strong>19</strong>
-              <em>2026</em>
+            <span className="folder-circuit" />
+
+            <span className="folder-sheet sheet-name folder-lift lift-one">
+              <small>ARQUIVO 26</small>
+              <strong>BRUNNA<br/>EVELYN</strong>
+              <em>19 · 08 · 2026</em>
             </span>
-            <span className="folder-sheet sheet-cap">
-              <img src="/capelo-lavanda.png" alt="" />
-              <small>GRADUATION DAY</small>
+
+            <span className="folder-sheet sheet-code folder-lift lift-two">
+              <span className="code-window-bar"><i/><i/><i/><small>main.py</small></span>
+              <code><b>def</b> grande_dia():<br/><span>celebrar(<em>"conquista"</em>)</span><br/><span>return <em>"novo ciclo"</em></span></code>
             </span>
-            <span className="folder-ticket">UCB · TAGUATINGA</span>
-            <span className="folder-paperclip" />
+
+            <span className="terminal-card folder-lift lift-three">
+              <small>&gt;_ TERMINAL</small>
+              <code>brunna@futuro:~$<br/><b>pronta_para_o_amanha</b><i>_</i></code>
+            </span>
+
+            <span className="symbol-card symbol-code folder-lift lift-four">&lt;/&gt;</span>
+            <span className="symbol-card symbol-braces folder-lift lift-five">{'{ }'}</span>
+            <span className="binary-note folder-lift lift-six">01001100<br/>01101001</span>
+            <span className="folder-ticket folder-lift lift-three">UCB · TAGUATINGA</span>
+            <span className="folder-paperclip folder-lift lift-one" />
+
             <span className="folder-main">
               <span className="folder-tab">ARQUIVO PESSOAL</span>
               <span className="folder-kicker">DEPOIS DE TANTOS CÓDIGOS</span>
-              <span className="folder-title">Bruna</span>
-              <span className="folder-script">minha colação</span>
+              <span className="folder-stamp">GRANDE DIA</span>
+              <span className="folder-stars">✦　✧　✦</span>
+              <span className="folder-cap-action">
+                <span className="folder-cap-halo" />
+                <img src="/capelo-lavanda.png" alt="" />
+                <span className="folder-cta">CLIQUE AQUI</span>
+              </span>
               <span className="folder-meta">
                 <span>CLASS OF ’26</span>
                 <span>19 · 08 · 2026</span>
               </span>
-              <span className="folder-stamp">GRANDE DIA</span>
-              <span className="folder-stars">✦　✧　✦</span>
             </span>
           </span>
           <span className="sr-only">Abrir o convite</span>

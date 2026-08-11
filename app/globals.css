@@ -566,3 +566,245 @@
 @media(max-height:700px){
   .folder-scene{height:86vh;min-height:0}
 }
+
+/* Capa aprovada: arquivo pessoal de tecnologia */
+.folder-scene{
+  width:min(94vw,1040px);
+  height:min(82vh,680px);
+}
+.folder-circuit{
+  position:absolute;
+  z-index:0;
+  inset:2% 3% 18%;
+  opacity:.42;
+  background:
+    radial-gradient(circle at 12% 18%,#fff 0 3px,transparent 4px),
+    radial-gradient(circle at 76% 8%,#fff 0 3px,transparent 4px),
+    radial-gradient(circle at 92% 46%,#fff 0 3px,transparent 4px),
+    linear-gradient(90deg,transparent 11%,rgba(105,72,126,.46) 11% 11.2%,transparent 11.2% 76%,rgba(105,72,126,.4) 76% 76.2%,transparent 76.2%),
+    linear-gradient(0deg,transparent 17%,rgba(105,72,126,.38) 17% 17.3%,transparent 17.3% 82%,rgba(105,72,126,.34) 82% 82.3%,transparent 82.3%);
+  clip-path:polygon(0 0,100% 0,100% 67%,82% 67%,82% 100%,13% 100%,13% 72%,0 72%);
+}
+.sheet-name{
+  top:3%;
+  left:5%;
+  width:29%;
+  height:43%;
+  justify-content:center;
+  padding:clamp(20px,3vw,42px);
+  transform:rotate(-5deg);
+  text-align:left;
+  background:
+    repeating-linear-gradient(0deg,transparent 0,transparent 24px,rgba(117,81,139,.13) 24px,rgba(117,81,139,.13) 25px),
+    #fbf8fc;
+}
+.sheet-name small,.sheet-name em{
+  color:#7b568d;
+  font-size:clamp(7px,.76vw,10px);
+  font-style:normal;
+  font-weight:700;
+  letter-spacing:.22em;
+}
+.sheet-name strong{
+  margin:11px 0 8px;
+  color:#583768;
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(35px,4.7vw,62px);
+  font-weight:600;
+  line-height:.77;
+  letter-spacing:-.045em;
+}
+.sheet-code{
+  top:1%;
+  right:5%;
+  width:32%;
+  height:43%;
+  padding:0;
+  transform:rotate(4deg);
+  text-align:left;
+  color:#ebdff3;
+  background:linear-gradient(145deg,#2b1934,#3d2450 62%,#24152e);
+}
+.code-window-bar{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  height:32px;
+  padding:0 12px;
+  border-bottom:1px solid rgba(224,199,239,.18);
+  background:rgba(16,9,22,.46);
+}
+.code-window-bar i{width:7px;height:7px;border-radius:50%;background:#a978c3}
+.code-window-bar i:nth-child(2){background:#d4b2e4}.code-window-bar i:nth-child(3){background:#806092}
+.code-window-bar small{margin-left:auto;font-size:7px;letter-spacing:.16em;opacity:.65}
+.sheet-code code{
+  display:block;
+  padding:clamp(15px,2.3vw,29px);
+  color:#f3e9f8;
+  font-family:Consolas,'Courier New',monospace;
+  font-size:clamp(8px,1.05vw,13px);
+  line-height:1.9;
+}
+.sheet-code code b{color:#cf94ee}.sheet-code code em{color:#efc8dc;font-style:normal}.sheet-code code span{padding-left:1.5em}
+.terminal-card{
+  position:absolute;
+  z-index:2;
+  top:8%;
+  left:37%;
+  width:28%;
+  padding:14px 17px 16px;
+  border:1px solid rgba(255,255,255,.28);
+  border-radius:8px;
+  color:#f5ebfa;
+  background:linear-gradient(135deg,#774e8d,#4d315d);
+  box-shadow:0 13px 24px rgba(54,31,67,.18);
+  transform:rotate(-1.5deg);
+  text-align:left;
+}
+.terminal-card small{display:block;margin-bottom:12px;font-size:7px;font-weight:800;letter-spacing:.2em;opacity:.75}
+.terminal-card code{font-family:Consolas,'Courier New',monospace;font-size:clamp(7px,.8vw,10px);line-height:1.7}
+.terminal-card code b{color:#f2c9ea;font-weight:400}.terminal-card code i{animation:terminalBlink .8s steps(1) infinite}
+.symbol-card{
+  position:absolute;
+  z-index:2;
+  display:grid;
+  place-items:center;
+  aspect-ratio:1;
+  border:1px solid rgba(103,69,123,.28);
+  border-radius:10px;
+  background:#f8f3fa;
+  color:#6e4683;
+  font-family:Consolas,'Courier New',monospace;
+  font-weight:700;
+  box-shadow:0 12px 22px rgba(57,34,70,.13);
+}
+.symbol-code{top:28%;left:3%;width:70px;transform:rotate(8deg);font-size:21px}
+.symbol-braces{top:17%;right:0;width:64px;transform:rotate(-9deg);font-size:22px}
+.binary-note{
+  position:absolute;
+  z-index:1;
+  top:3%;
+  left:30%;
+  color:rgba(84,53,100,.7);
+  font-family:Consolas,'Courier New',monospace;
+  font-size:8px;
+  line-height:1.5;
+  letter-spacing:.14em;
+  transform:rotate(6deg);
+}
+.folder-ticket{top:30%;right:28%;z-index:4}
+.folder-main{
+  right:2%;
+  bottom:0;
+  left:2%;
+  height:65%;
+  background:
+    radial-gradient(circle at 50% 44%,rgba(255,255,255,.18),transparent 26%),
+    repeating-linear-gradient(0deg,rgba(72,41,89,.035) 0,rgba(72,41,89,.035) 1px,transparent 1px,transparent 4px),
+    linear-gradient(145deg,#c48ae1 0,#aa72cb 46%,#8255a0 100%);
+}
+.folder-kicker{top:12%;left:6%}
+.folder-stamp{top:13%;right:6%}
+.folder-stars{top:37%;right:7%}
+.folder-cap-action{
+  position:absolute;
+  z-index:2;
+  top:48%;
+  left:50%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  width:clamp(190px,29vw,310px);
+  transform:translate(-50%,-50%);
+  transition:transform .35s ease,filter .35s ease;
+}
+.folder-cap-halo{
+  position:absolute;
+  z-index:-1;
+  top:1%;
+  width:72%;
+  aspect-ratio:1;
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(248,231,255,.45),rgba(224,191,241,.12) 48%,transparent 70%);
+  filter:blur(3px);
+}
+.folder-cap-action img{
+  display:block;
+  width:100%;
+  height:clamp(115px,20vw,205px);
+  object-fit:contain;
+  mix-blend-mode:screen;
+  filter:drop-shadow(0 13px 13px rgba(70,38,87,.26)) brightness(1.1);
+}
+.folder-cta{
+  display:grid;
+  place-items:center;
+  min-width:150px;
+  height:35px;
+  margin-top:-10px;
+  padding:0 24px;
+  border:1px solid rgba(99,60,119,.18);
+  border-radius:999px;
+  background:#faf6fb;
+  color:#59356c;
+  font-size:8px;
+  font-weight:800;
+  letter-spacing:.22em;
+  box-shadow:0 9px 18px rgba(60,35,73,.16),inset 0 1px #fff;
+}
+.folder-meta{right:6%;bottom:11%;left:6%}
+.canva-cover:hover .folder-cap-action,.canva-cover:focus-visible .folder-cap-action{
+  transform:translate(-50%,-53%) scale(1.035);
+  filter:brightness(1.04);
+}
+.canva-cover:focus-visible{outline:3px solid rgba(101,63,121,.58);outline-offset:-8px}
+.is-tossing .folder-lift{animation:techCardLift .72s cubic-bezier(.3,.8,.25,1) both}
+.is-tossing .lift-one{animation-delay:0s}.is-tossing .lift-two{animation-delay:.05s}.is-tossing .lift-three{animation-delay:.1s}
+.is-tossing .lift-four{animation-delay:.14s}.is-tossing .lift-five{animation-delay:.18s}.is-tossing .lift-six{animation-delay:.22s}
+.is-tossing .folder-main{animation:folderPress .86s cubic-bezier(.22,.8,.28,1) both}
+.is-tossing .folder-cap-action{animation:capFocus .86s cubic-bezier(.22,.8,.28,1) both}
+.is-tossing .folder-cta{animation:ctaPress .5s ease both}
+@keyframes terminalBlink{0%,48%{opacity:1}49%,100%{opacity:0}}
+@keyframes techCardLift{
+  0%{opacity:1;translate:0 0;filter:blur(0)}
+  45%{opacity:1;translate:0 -7vh;filter:blur(0)}
+  100%{opacity:0;translate:0 -42vh;filter:blur(2px)}
+}
+@keyframes folderPress{
+  0%{transform:translateY(0) scale(1)}
+  30%{transform:translateY(7px) scale(.99)}
+  100%{transform:translateY(22px) scale(1.025)}
+}
+@keyframes capFocus{
+  0%{transform:translate(-50%,-50%) scale(1)}
+  35%{transform:translate(-50%,-47%) scale(.95)}
+  100%{transform:translate(-50%,-63%) scale(1.2);filter:brightness(1.12)}
+}
+@keyframes ctaPress{0%{transform:scale(1);opacity:1}45%{transform:scale(.94);opacity:1}100%{transform:scale(1.04);opacity:0}}
+@media(max-width:700px){
+  .folder-scene{width:96vw;height:min(78svh,650px);min-height:520px}
+  .sheet-name{top:3%;left:2%;width:44%;height:35%;padding:18px}
+  .sheet-name strong{font-size:clamp(31px,10vw,45px)}
+  .sheet-code{top:1%;right:2%;width:48%;height:34%}
+  .code-window-bar{height:25px;padding:0 8px}.sheet-code code{padding:11px;font-size:6px;line-height:1.75}
+  .terminal-card{top:16%;left:30%;width:43%;padding:10px}.terminal-card small{margin-bottom:6px}.terminal-card code{font-size:5.5px}
+  .symbol-code{top:28%;left:0;width:45px;font-size:14px}.symbol-braces{top:24%;right:0;width:42px;font-size:14px}
+  .binary-note{top:2%;left:43%;font-size:5px}
+  .folder-ticket{top:30%;right:19%;padding:7px 10px;font-size:5.5px}
+  .folder-main{right:1%;bottom:3%;left:1%;height:64%}
+  .folder-kicker{top:11%;left:5%;max-width:50%;line-height:1.6}
+  .folder-stamp{top:11%;right:4%}
+  .folder-stars{top:29%;right:4%;font-size:12px}
+  .folder-cap-action{top:50%;width:min(68vw,265px)}
+  .folder-cap-action img{height:clamp(135px,39vw,180px)}
+  .folder-cta{min-width:132px;height:31px;padding:0 17px;font-size:7px}
+  .folder-meta{right:5%;bottom:10%;left:5%;font-size:5.5px}
+  .folder-paperclip{top:33%}
+}
+@media(max-height:680px) and (min-width:701px){
+  .folder-scene{height:90vh;min-height:0}
+  .folder-cap-action img{height:26vh}
+}
+@media(prefers-reduced-motion:reduce){
+  .terminal-card code i,.folder-scene{animation:none!important}
+}
