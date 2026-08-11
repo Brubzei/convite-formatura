@@ -87,7 +87,7 @@ export default function Home() {
               <span className="folder-stars">✦　✧　✦</span>
               <span className="folder-cap-action">
                 <span className="folder-cap-halo" />
-                <img src="/capelo-lavanda.png" alt="" />
+                <img src="/capelo-lavanda-recortado.png" alt="" />
                 <span className="folder-cta">CLIQUE AQUI</span>
               </span>
               <span className="folder-meta">
@@ -145,7 +145,7 @@ export default function Home() {
             <article className="info-card">
               <div><span className="icon">◷</span><p><small>Abertura dos portões</small><strong>17h30</strong><em>Chegue cedo para garantir um bom lugar.</em></p></div>
               <div><span className="icon">✦</span><p><small>Início da cerimônia</small><strong>20h</strong></p></div>
-              <div><span className="icon">◇</span><p><small>Valor do convite</small><strong>R$ 50,00</strong></p></div>
+              <div><span className="icon">◇</span><p><small>Valor do convite</small><strong>R$ 50,00</strong><em>Confirmou presença? Avise-me até 17/08 para eu resgatar seu convite.</em></p></div>
             </article>
           </div>
           <article className="location-card">
@@ -153,6 +153,16 @@ export default function Home() {
             <h3>Universidade Católica<br/>de Brasília</h3>
             <p>Campus Taguatinga</p>
             <a href="https://www.google.com.br/maps/place/Universidade+Cat%C3%B3lica+de+Bras%C3%ADlia+-+C%C3%A2mpus+Taguatinga/@-15.8651042,-48.0327127,17z/data=!3m1!4b1!4m6!3m5!1s0x935a2d97a15b0507:0x3c3e4472ee75d834!8m2!3d-15.8651094!4d-48.0301378!16s%2Fm%2F02pklqk?entry=ttu&g_ep=EgoyMDI2MDgwNS4xIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noreferrer">Abrir no mapa <span>↗</span></a>
+          </article>
+          <article className="rsvp-card">
+            <span className="rsvp-spark rsvp-spark-one">✦</span>
+            <span className="rsvp-spark rsvp-spark-two">✧</span>
+            <p className="eyebrow">confirme sua presença</p>
+            <h3>Você vem celebrar<br/><em>comigo?</em></h3>
+            <p>Avise-me até <strong>17/08</strong> para que eu consiga resgatar seu convite.</p>
+            <a href="https://api.whatsapp.com/send?phone=5561991131592&text=Presen%C3%A7a+confirmada+%E2%9C%94%EF%B8%8F" target="_blank" rel="noreferrer">
+              Confirmar pelo WhatsApp <span>↗</span>
+            </a>
           </article>
         </section>
 
