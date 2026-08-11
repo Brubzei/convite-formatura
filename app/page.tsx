@@ -47,7 +47,7 @@ export default function Home() {
       return;
     }
     setOpening(true);
-    window.setTimeout(() => setOpen(true), 860);
+    window.setTimeout(() => setOpen(true), 1040);
     window.setTimeout(() => setOpening(false), 2600);
   }
 
@@ -87,7 +87,7 @@ export default function Home() {
               <span className="folder-stars">✦　✧　✦</span>
               <span className="folder-cap-action">
                 <span className="folder-cap-halo" />
-                <img src="/capelo-lavanda-recortado.png" alt="" />
+                <img src="/capelo-lavanda-frio-recortado.png" alt="" />
                 <span className="folder-cta">CLIQUE AQUI</span>
               </span>
               <span className="folder-meta">
@@ -145,7 +145,7 @@ export default function Home() {
             <article className="info-card">
               <div><span className="icon">◷</span><p><small>Abertura dos portões</small><strong>17h30</strong><em>Chegue cedo para garantir um bom lugar.</em></p></div>
               <div><span className="icon">✦</span><p><small>Início da cerimônia</small><strong>20h</strong></p></div>
-              <div><span className="icon">◇</span><p><small>Valor do convite</small><strong>R$ 50,00</strong><em>Confirmou presença? Avise-me até 17/08 para eu resgatar seu convite.</em></p></div>
+              <div><span className="icon">◇</span><p><small>Valor do convite</small><strong>R$ 50,00</strong><em>Pagamento até 17/08</em></p></div>
             </article>
           </div>
           <article className="location-card">
@@ -159,9 +159,9 @@ export default function Home() {
             <span className="rsvp-spark rsvp-spark-two">✧</span>
             <p className="eyebrow">confirme sua presença</p>
             <h3>Você vem celebrar<br/><em>comigo?</em></h3>
-            <p>Avise-me até <strong>17/08</strong> para que eu consiga resgatar seu convite.</p>
+            <p><strong>Pagamento até 17/08</strong></p>
             <a href="https://api.whatsapp.com/send?phone=5561991131592&text=Presen%C3%A7a+confirmada+%E2%9C%94%EF%B8%8F" target="_blank" rel="noreferrer">
-              Confirmar pelo WhatsApp <span>↗</span>
+              Confirmar presença <span>↗</span>
             </a>
           </article>
         </section>

@@ -1028,3 +1028,68 @@
   .rsvp-card>a{gap:12px;min-height:48px;padding:0 20px;font-size:9px;letter-spacing:.1em}
   .rsvp-spark-one{left:7%}.rsvp-spark-two{right:7%}
 }
+
+/* Paleta lavanda fria e abertura em camadas */
+.canva-cover{
+  background:
+    radial-gradient(circle at 50% 32%,rgba(255,255,255,.17),transparent 35%),
+    repeating-linear-gradient(0deg,rgba(57,38,70,.038) 0,rgba(57,38,70,.038) 1px,transparent 1px,transparent 4px),
+    linear-gradient(138deg,#d4c6df 0,#bda8ce 48%,#a288b7 100%);
+}
+.folder-main{
+  border-color:rgba(244,235,249,.36);
+  background:
+    radial-gradient(circle at 51% 47%,rgba(255,255,255,.12),transparent 30%),
+    repeating-linear-gradient(0deg,rgba(52,33,64,.036) 0,rgba(52,33,64,.036) 1px,transparent 1px,transparent 4px),
+    linear-gradient(145deg,#ac81c4 0,#946bad 53%,#79558f 100%);
+  box-shadow:inset 0 1px rgba(255,255,255,.4),0 22px 35px rgba(55,38,65,.22);
+}
+.folder-tab{background:#9d72b7;color:#fdfaff}
+.sheet-name{border-color:rgba(91,65,106,.22);color:#583d66;background:repeating-linear-gradient(0deg,transparent 0,transparent 26px,rgba(105,76,123,.13) 26px,rgba(105,76,123,.13) 27px),#faf8fb}
+.sheet-name small,.sheet-name em{color:#735481}.sheet-name strong{color:#50375c}
+.sheet-code{border-color:rgba(220,204,230,.22);color:#e8daef;background:linear-gradient(145deg,#422c50,#35233f 62%,#291c32)}
+.code-window-bar{background:rgba(27,18,33,.58)}
+.code-window-bar i{background:#956cab}.code-window-bar i:nth-child(2){background:#c6a9d4}.code-window-bar i:nth-child(3){background:#745a82}
+.sheet-code code{color:#eee5f3}.sheet-code code b{color:#bd91d1}.sheet-code code em{color:#d5b8e2}
+.terminal-card{border-color:rgba(237,225,244,.28);color:#f3ebf6;background:linear-gradient(135deg,#684c79,#51385f)}
+.terminal-card code b{color:#d6b9e2}
+.symbol-card{border-color:rgba(100,74,114,.24);background:#f8f5f9;color:#684b77}
+.folder-ticket{border-color:#795a89;background:#dfd0e6;color:#5e436c}
+.folder-kicker,.folder-meta,.folder-stamp,.folder-stars{color:#f1e8f5}
+.folder-paperclip{border-color:#ded0e5}
+.folder-cap-action{top:54%;width:clamp(335px,42vw,520px)}
+.folder-cap-action img{height:clamp(215px,27vw,340px);filter:drop-shadow(0 14px 12px rgba(59,38,70,.24))}
+.folder-cta{min-width:218px;height:46px;margin-top:-50px;color:#604370;background:#faf7fb;border-color:rgba(255,255,255,.6)}
+.folder-lift{will-change:translate,rotate,scale,opacity,filter}
+.lift-one{--fly-x:-8vw;--fly-turn:-8deg;--fly-delay:0ms}
+.lift-two{--fly-x:-2vw;--fly-turn:4deg;--fly-delay:55ms}
+.lift-three{--fly-x:5vw;--fly-turn:7deg;--fly-delay:110ms}
+.lift-four{--fly-x:10vw;--fly-turn:12deg;--fly-delay:165ms}
+.lift-five{--fly-x:13vw;--fly-turn:-10deg;--fly-delay:215ms}
+.lift-six{--fly-x:-13vw;--fly-turn:-14deg;--fly-delay:260ms}
+.is-tossing .folder-lift{
+  animation:folderFlyUp 1.05s cubic-bezier(.18,.72,.2,1) var(--fly-delay) both!important;
+}
+.is-tossing .folder-circuit{animation:circuitRelease .92s ease-out both}
+.is-tossing .folder-main{animation:folderOpenReaction 1.04s cubic-bezier(.22,.8,.28,1) both}
+.is-tossing .folder-cap-action{animation:capLavenderFocus 1.04s cubic-bezier(.22,.8,.28,1) both}
+.is-tossing .folder-cta{animation:ctaLavenderPress .72s ease both}
+@keyframes folderFlyUp{
+  0%{opacity:1;translate:0 0;rotate:0deg;scale:1;filter:blur(0)}
+  16%{opacity:1;translate:0 8px;rotate:0deg;scale:.985;filter:blur(0)}
+  54%{opacity:1;translate:var(--fly-x) -18vh;rotate:var(--fly-turn);scale:1.02;filter:blur(0)}
+  100%{opacity:0;translate:var(--fly-x) -88vh;rotate:var(--fly-turn);scale:.9;filter:blur(2px)}
+}
+@keyframes circuitRelease{0%{opacity:.58;scale:1}42%{opacity:.7;scale:1.02}100%{opacity:0;scale:1.08}}
+@keyframes folderOpenReaction{0%{transform:translateY(0) scale(1)}22%{transform:translateY(9px) scale(.988)}68%{transform:translateY(15px) scale(1.012)}100%{transform:translateY(28px) scale(1.04)}}
+@keyframes capLavenderFocus{0%{transform:translate(-50%,-50%) scale(1)}24%{transform:translate(-50%,-46%) scale(.96)}72%{transform:translate(-50%,-58%) scale(1.08)}100%{transform:translate(-50%,-70%) scale(1.14);filter:brightness(1.08)}}
+@keyframes ctaLavenderPress{0%{transform:scale(1);opacity:1}28%{transform:scale(.94);opacity:1}66%{transform:scale(1.03);opacity:.82}100%{transform:translateY(-12px) scale(1.06);opacity:0}}
+@media(max-width:700px){
+  .folder-cap-action{top:53%;width:min(84vw,360px)}
+  .folder-cap-action img{height:clamp(190px,52vw,255px)}
+  .folder-cta{min-width:164px;height:37px;margin-top:-36px}
+  .lift-one{--fly-x:-15vw}.lift-two{--fly-x:-7vw}.lift-three{--fly-x:8vw}.lift-four{--fly-x:17vw}.lift-five{--fly-x:20vw}.lift-six{--fly-x:-20vw}
+}
+@media(prefers-reduced-motion:reduce){
+  .folder-lift,.folder-circuit,.folder-main,.folder-cap-action,.folder-cta{animation:none!important}
+}
