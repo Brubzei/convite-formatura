@@ -1022,11 +1022,13 @@
 .rsvp-card>a:focus-visible{outline:2px solid #fff;outline-offset:4px}
 .rsvp-spark{position:absolute;color:#e8c9f4;animation:coverTwinkle 2.1s ease-in-out infinite}
 .rsvp-spark-one{top:18%;left:13%;font-size:22px}.rsvp-spark-two{right:14%;bottom:20%;font-size:28px;animation-delay:.55s}
+.rsvp-final{max-width:1050px;margin:60px auto 0;text-transform:none}
 @media(max-width:700px){
   .rsvp-card{padding:42px 22px}
   .rsvp-card h3{font-size:clamp(44px,14vw,62px)}
   .rsvp-card>a{gap:12px;min-height:48px;padding:0 20px;font-size:9px;letter-spacing:.1em}
   .rsvp-spark-one{left:7%}.rsvp-spark-two{right:7%}
+  .rsvp-final{margin-top:46px}
 }
 
 /* Paleta lavanda fria e abertura em camadas */

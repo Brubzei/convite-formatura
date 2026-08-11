@@ -154,16 +154,6 @@ export default function Home() {
             <p>Campus Taguatinga</p>
             <a href="https://www.google.com.br/maps/place/Universidade+Cat%C3%B3lica+de+Bras%C3%ADlia+-+C%C3%A2mpus+Taguatinga/@-15.8651042,-48.0327127,17z/data=!3m1!4b1!4m6!3m5!1s0x935a2d97a15b0507:0x3c3e4472ee75d834!8m2!3d-15.8651094!4d-48.0301378!16s%2Fm%2F02pklqk?entry=ttu&g_ep=EgoyMDI2MDgwNS4xIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noreferrer">Abrir no mapa <span>↗</span></a>
           </article>
-          <article className="rsvp-card">
-            <span className="rsvp-spark rsvp-spark-one">✦</span>
-            <span className="rsvp-spark rsvp-spark-two">✧</span>
-            <p className="eyebrow">confirme sua presença</p>
-            <h3>Você vem celebrar<br/><em>comigo?</em></h3>
-            <p><strong>Pagamento até 17/08</strong></p>
-            <a href="https://api.whatsapp.com/send?phone=5561991131592&text=Presen%C3%A7a+confirmada+%E2%9C%94%EF%B8%8F" target="_blank" rel="noreferrer">
-              Confirmar presença <span>↗</span>
-            </a>
-          </article>
         </section>
 
         <section className="after-section">
@@ -181,6 +171,16 @@ export default function Home() {
           <h2>Espero você!</h2>
           <p>19 de agosto de 2026 · Brasília</p>
           <button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Voltar ao início ↑</button>
+          <article className="rsvp-card rsvp-final">
+            <span className="rsvp-spark rsvp-spark-one">✦</span>
+            <span className="rsvp-spark rsvp-spark-two">✧</span>
+            <p className="eyebrow">confirme sua presença</p>
+            <h3>Você vem celebrar<br/><em>comigo?</em></h3>
+            <p><strong>Pagamento até 17/08</strong></p>
+            <a href="https://api.whatsapp.com/send?phone=5561991131592&text=Presen%C3%A7a+confirmada+%E2%9C%94%EF%B8%8F" target="_blank" rel="noreferrer">
+              Confirmar presença
+            </a>
+          </article>
         </footer>
       </section>
     </main>
